@@ -62,15 +62,6 @@ bool MillerRabinPrimeCheck(uint64_t number, int NumberOfSteps) {
         }
     }
 
-    // double probability = pow(0.25, NumberOfSteps);
-    // probability = (1 - probability) * 100;
-    // if (isPrime) {
-    //     printf("The number %llu IS prime.\n", number);
-    //     printf("%lf%% sure.\n", probability);
-    // }
-
-    // else
-    //     printf("The number %llu is NOT prime.\n", number);
     return true;
 }
 
@@ -103,14 +94,6 @@ void GenerateBigPrime(int numberDigits, double probability) {
             return;
         }
     }
-
-    // while (true) {
-    //     srand(time(NULL));
-    //     const uint64_t number = rand() % (highBound - lowerBound + 1) + lowerBound;
-    //
-    //
-    //
-    // }
 }
 
 int main() {
@@ -124,4 +107,5 @@ int main() {
 
     GenerateBigPrime(numberOfDigits, probability);
     return 0;
+
 }
