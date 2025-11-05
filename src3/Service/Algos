@@ -1,0 +1,10 @@
+- can combine it with strategy pattern to decide which algorithm to use to
+solve / generate the maze:
+    dijkstra
+    A*
+    recursive backtracking
+    ...
+
+- (possible) implement a factory pattern to create different strategies
+- (possible) implement observer to have multiple mazes all connected /
+2 mazes: one for the solution ( to give out hints ) and one for the player
