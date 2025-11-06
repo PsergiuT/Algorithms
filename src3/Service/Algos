@@ -1,0 +1,18 @@
+- can combine it with strategy pattern to decide which algorithm to use to
+solve / generate the maze:
+    dijkstra
+    A*
+    recursive backtracking
+    dead-end filling
+    right hand side
+    ...
+
+- (possible) implement a factory pattern to create different strategies
+- (possible) implement observer to have multiple mazes all connected /
+2 mazes: one for the solution ( to give out hints ) and one for the player
+
+--------------------------------------------------------------------------------------
+
++ improved maze generation
++ implement a solver class made for the user( read input from keyboard )
+    implement option that lets you backup( implement checkpoints )
