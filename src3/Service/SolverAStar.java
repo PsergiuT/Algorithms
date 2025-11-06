@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 import java.util.List;
 
 
-public class Solver {
+public class SolverAStar {
     private static final double MAX = Double.POSITIVE_INFINITY;
     private final AStarCell Start;
     private final AStarCell End;
@@ -29,7 +29,7 @@ public class Solver {
         return Math.abs(End.getRow() - row) + Math.abs(End.getCol() - col); //Manhattan distance
     }
 
-    public Solver(Cell St, Cell E, Maze Maze,  MazeRenderer MazeRenderer){
+    public SolverAStar(Cell St, Cell E, Maze Maze, MazeRenderer MazeRenderer){
         Cell End = Maze.getCell(E.getRow(), E.getCol());
         Cell Start = Maze.getCell(St.getRow(), St.getCol());
 

@@ -8,9 +8,9 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        int rows = 38;
-        int cols = 72;
-        int cellSize = 20;
+        int rows = 19;
+        int cols = 38;
+        int cellSize = 40;
 
         Cell Start = new Cell(0, 0);
         Cell End = new Cell(rows - 1, cols - 1);
@@ -29,6 +29,11 @@ public class Main {
         mazeUI.drawMaze();
         try{Thread.sleep(1000);} catch(InterruptedException e){}
         mazeUI.solveMaze();
+        try{Thread.sleep(1000);} catch(InterruptedException e){}
+        mazeUI.redraw();
+        //mazeUI.drawMaze(); - clear visited table
+        try{Thread.sleep(1000);} catch(InterruptedException e){}
+        mazeUI.playerSolveMaze();
 
     }
 }
